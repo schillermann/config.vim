@@ -4,22 +4,18 @@
 
 To install this Vim configuration, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone git@github.com:schillermann/config.vim.git ~/.config/vim
-   ```
-
-2. Link the `vim` directory (plugins):
-   ```bash
-   ln -s ~/.config/vim/vim ~/.vim
-   ```
+Clone the repository:
+```bash
+git clone git@github.com:schillermann/config.vim.git ~/.vim
+```
 
 ## Adding Plugins
 
-Plugins are managed as git submodules within the `pack/` directory. To add a new plugin (e.g., `vim-fugitive`):
+Plugins are managed as git submodules within the `pack/` directory.
+To add a new plugin (e.g., `vim-fugitive`):
 
 ```bash
-cd ~/.config/vim
+cd ~/.vim
 git submodule add https://github.com/tpope/vim-fugitive.git vim/pack/plugins/start/vim-fugitive
 ```
 
@@ -28,6 +24,6 @@ git submodule add https://github.com/tpope/vim-fugitive.git vim/pack/plugins/sta
 To update all plugins to their latest versions:
 
 ```bash
-cd ~/.config/vim
+cd ~/.vim
 git submodule update --remote --merge
 ```
