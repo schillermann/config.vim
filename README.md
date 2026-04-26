@@ -9,12 +9,7 @@ To install this Vim configuration, follow these steps:
    git clone git@github.com:schillermann/config.vim.git ~/.config/vim
    ```
 
-2. Link the `vimrc` file:
-   ```bash
-   ln -s ~/.config/vim/vimrc ~/.vimrc
-   ```
-
-3. Link the `vim` directory (plugins):
+2. Link the `vim` directory (plugins):
    ```bash
    ln -s ~/.config/vim/vim ~/.vim
    ```
