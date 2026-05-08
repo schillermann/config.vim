@@ -8,3 +8,5 @@ nnoremap L :bnext<CR>
 
 " Explorer
 nnoremap <leader>e :Explore<CR>
+" Git
+nnoremap <leader>g :0G<CR>
