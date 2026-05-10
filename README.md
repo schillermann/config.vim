@@ -16,7 +16,7 @@ To add a new plugin (e.g., `vim-fugitive`):
 
 ```bash
 cd ~/.vim
-git submodule add https://github.com/tpope/vim-fugitive.git vim/pack/plugins/start/vim-fugitive
+git submodule add https://github.com/tpope/vim-fugitive.git pack/category/start/vim-fugitive
 ```
 
 ## Updating Plugins
@@ -26,4 +26,13 @@ To update all plugins to their latest versions:
 ```bash
 cd ~/.vim
 git submodule update --remote --merge
+```
+
+## Keymap
+
+To find a specific keymap, you can use the `:filter` command.
+For example, to find all normal mode mappings related to "git" and "status":
+
+```vim
+:filter /git.*status/ nmap
 ```
