@@ -8,5 +8,7 @@ const command_list = [
     ['search replace in file case-insensitive', '%s///gi', 4],
     ['search replace in file with confirm', '%s///gc', 4],
     ['search replace in file with last search', '%s///g', 2],
+    ['search in current directory', ':grep -n "" .', 3],
+    ['search in current directory recrusive', ':grep -rn "" .', 3],
 ]
 nnoremap <leader>c <ScriptCmd>command_picker.Open(command_list)<CR>
