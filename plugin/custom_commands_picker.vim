@@ -11,4 +11,5 @@ const command_list = [
     ['search in current directory', ':grep -n "" .', 3],
     ['search in current directory recrusive', ':grep -rn "" .', 3],
 ]
-nnoremap <leader>c <ScriptCmd>command_picker.Open(command_list)<CR>
+command! CustomCommands command_picker.Open(command_list)
+nnoremap <leader>c <cmd>CustomCommands<CR>
