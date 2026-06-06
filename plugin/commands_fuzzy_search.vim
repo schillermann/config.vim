@@ -38,10 +38,10 @@ function! s:FuzzySearchMap(args)
     execute 'filter /\c' . substitute(a:args, ' ', '.*', 'g') . '/ map'
 endfunction
 
-command! -nargs=* Fnmap call s:FuzzySearchNmap(<q-args>)
-command! -nargs=* Fimap call s:FuzzySearchImap(<q-args>)
-command! -nargs=* Fvmap call s:FuzzySearchVmap(<q-args>)
-command! -nargs=* Fmap  call s:FuzzySearchMap(<q-args>)
+command! -nargs=* CommandSearchNormal call s:FuzzySearchNmap(<q-args>)
+command! -nargs=* CommandSearchInsert call s:FuzzySearchImap(<q-args>)
+command! -nargs=* CommandSearchVisual call s:FuzzySearchVmap(<q-args>)
+command! -nargs=* CommandSearch call s:FuzzySearchMap(<q-args>)
 
 function! s:FuzzySearchCmd(args)
     if empty(a:args)
