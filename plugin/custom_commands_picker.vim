@@ -8,8 +8,12 @@ const command_list = [
     ['search replace in file case-insensitive', '%s///gi', 4],
     ['search replace in file with confirm', '%s///gc', 4],
     ['search replace in file with last search', '%s///g', 2],
-    ['search in current directory', ':grep -n "" .', 3],
-    ['search in current directory recrusive', ':grep -rn "" .', 3],
+    ['search in current directory', 'grep -n "" .', 3],
+    ['search in current directory recrusive', 'grep -rn "" .', 3],
+    ['command fuzzy search description normal mode', 'Fnmap '],
+    ['command fuzzy search description insert mode', 'Fimap '],
+    ['command fuzzy search description visual mode', 'Fvmap '],
+    ['command fuzzy search description all mode', 'Fmap '],
 ]
 command! CustomCommands command_picker.Open(command_list)
 nnoremap <leader>c <cmd>CustomCommands<CR>
