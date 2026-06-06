@@ -8,7 +8,7 @@ g:start_screen_blocks = [
         { description: 'quit vim', command: ':q' },
     ]},
     { items: [
-        { shortcut: '<space>c', description: 'custom commands', command: ':CustomCommands' },
+        { shortcut: '<space>c', description: 'command templates', command: ':CommandTemplates' },
         { shortcut: '<space>e', description: 'open file explorer', command: ':Explore' },
         { shortcut: '<space>g', description: 'git status', command: ':0G' },
     ]},

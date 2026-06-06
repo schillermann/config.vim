@@ -15,5 +15,5 @@ const command_list = [
     ['command fuzzy search description visual mode', 'CommandSearchVisual '],
     ['command fuzzy search description all mode', 'CommandSearch '],
 ]
-command! CustomCommands command_picker.Open(command_list)
-nnoremap <leader>c <cmd>CustomCommands<CR>
+command! CommandTemplates command_picker.Open(command_list)
+nnoremap <leader>c <cmd>CommandTemplates<CR>
