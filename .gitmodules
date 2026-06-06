@@ -10,3 +10,6 @@
 [submodule "pack/picker/start/command-picker"]
 	path = pack/picker/start/command-picker
 	url = https://github.com/schillermann/command-picker.vim
+[submodule "pack/ui/start/start-screen"]
+	path = pack/ui/start/start-screen
+	url = https://github.com/schillermann/start-screen.vim.git
