@@ -1,6 +1,8 @@
 vim9script
 
-import autoload 'command_picker.vim'
+g:loaded_command_templates = 1
+
+import autoload 'command_templates.vim'
 
 const command_list = [
     ['search replace on line under cursor', 's///g', 3],
@@ -15,5 +17,5 @@ const command_list = [
     ['command fuzzy search description visual mode', 'CommandSearchVisual '],
     ['command fuzzy search description all mode', 'CommandSearch '],
 ]
-command! CommandTemplates command_picker.Open(command_list)
+command! CommandTemplates command_templates.Open(command_list)
 nnoremap <leader>c <cmd>CommandTemplates<CR>
