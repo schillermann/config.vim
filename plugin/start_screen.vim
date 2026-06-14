@@ -29,3 +29,8 @@ g:start_screen_blocks = [
         { shortcut: 'K', description: 'hover' },
     ]},
 ]
+
+augroup StartGroup
+    autocmd!
+    autocmd VimEnter * StartScreen
+augroup END
