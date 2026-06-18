@@ -1,5 +1,9 @@
 # Vim Configuration
 
+## Features
+
+- **Wayland Optimized**: Includes asynchronous clipboard support via `wl-copy` for seamless integration with Wayland environments.
+
 ## Installation
 
 To install this Vim configuration, follow these steps:
