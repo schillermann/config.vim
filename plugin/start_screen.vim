@@ -28,6 +28,9 @@ g:start_screen_blocks = [
         { shortcut: '[g', description: 'previous diagnostic' },
         { shortcut: 'K', description: 'hover' },
     ]},
+    { title: 'Git', items: [
+        { description: 'git branch', command: ':BranchName' },
+    ]},
 ]
 
 augroup StartGroup
