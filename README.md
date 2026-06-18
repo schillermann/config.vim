@@ -36,11 +36,3 @@ For example, to find all normal mode mappings related to "git" and "status":
 ```vim
 :filter /git.*status/ nmap
 ```
-
-### Custom Keymaps
-
-| Keymap | Description |
-| --- | --- |
-| `<space>c` | Custom command filter list |
-| `<space>e` | Open explorer |
-| `<space>g` | Git status |
