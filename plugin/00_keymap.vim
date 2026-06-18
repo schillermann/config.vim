@@ -8,6 +8,7 @@ nnoremap <leader>e :Explore<CR>  " opens netrw fullscreen as file explorer in th
 " Git
 nnoremap <leader>g :0G<CR>  " git summary fullscreen window like git status
 
-" Do not yank with dd or dw
+" Do not yank with dd, dw, or d in visual mode
 nnoremap dd "_dd
 nnoremap dw "_dw
+vnoremap d "_d
