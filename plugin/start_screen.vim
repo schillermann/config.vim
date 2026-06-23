@@ -32,8 +32,3 @@ g:start_screen_blocks = [
         { description: 'git branch', command: ':BranchName' },
     ]},
 ]
-
-augroup StartGroup
-    autocmd!
-    autocmd VimEnter * StartScreen
-augroup END
