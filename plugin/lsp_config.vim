@@ -49,7 +49,10 @@ def OnLspBufferEnabled()
     nnoremap <buffer> K <plug>(lsp-hover)
 
     g:lsp_format_sync_timeout = 1000
-    autocmd BufWritePre <buffer> *.rs,*.go LspDocumentFormatSync
+    # Format on save only for languages where it is fast and standard practice
+    if &filetype == 'rust' || &filetype == 'go'
+        autocmd BufWritePre <buffer> LspDocumentFormatSync
+    endif
 enddef
 
 augroup lsp_install
