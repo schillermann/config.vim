@@ -4,14 +4,28 @@
 
 - **Wayland Optimized**: Includes asynchronous clipboard support via `wl-copy` for seamless integration with Wayland environments.
 
+## Prerequisites
+
+- **Vim 9.0+** (Debian/Ubuntu: `sudo apt install vim`, as default `vim-tiny` is not sufficient)
+- Optional (for Wayland clipboard): `wl-clipboard`
+
 ## Installation
 
-To install this Vim configuration, follow these steps:
+To install this Vim configuration, clone the repository with submodules:
 
-Clone the repository:
 ```bash
-git clone git@github.com:schillermann/config.vim.git ~/.vim
+git clone --recurse-submodules git@github.com:schillermann/config.vim.git ~/.vim
 ```
+
+If already cloned without submodules, initialize them via:
+
+```bash
+cd ~/.vim
+git submodule update --init --recursive
+```
+
+> [!NOTE]
+> A separate `~/.vimrc` is not required. Vim automatically loads configuration files from `plugin/` and packages from `pack/`.
 
 ## Adding Plugins
 
