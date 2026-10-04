@@ -1,12 +1,18 @@
 let mapleader = " "
 
 " Buffer
-nnoremap H :bprevious<CR>  " move to previous buffer
-nnoremap L :bnext<CR>  " move to the next buffer
+" move to previous buffer
+nnoremap H :bprevious<CR>
+" move to the next buffer
+nnoremap L :bnext<CR>
+
 " Explorer
-nnoremap <leader>e :Explore<CR>  " opens netrw fullscreen as file explorer in the directory of the opened file
+" opens netrw fullscreen as file explorer in the directory of the opened file
+nnoremap <leader>e :Explore<CR>
+
 " Git
-nnoremap <leader>g :0G<CR>  " git summary fullscreen window like git status
+" git summary fullscreen window like git status
+nnoremap <leader>g :0G<CR>
 
 " Do not yank with dd, dw, or d in visual mode
 nnoremap dd "_dd
